@@ -22,10 +22,6 @@
     padding: 10px;
 }
 
-.logo {
-    display: inline-block;
-    margin-right: 20px;
-}
 
 ul {
     list-style: none;
@@ -40,4 +36,5 @@ li {
 
 li:hover {
     text-decoration: underline;
+    color: blue;
 }

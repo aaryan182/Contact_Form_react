@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { useState } from "react";
 const ContactForm = () => {
-  const [name, setName] = useState("Aaryan");
+  const [name, setName] = useState("Aaryan Bajaj");
   const [email, setEmail] = useState("aaryanbajaj.com");
   const [text, setText] = useState("Follow me !!");
 
@@ -15,6 +15,8 @@ const ContactForm = () => {
     setName(event.target[0].value);
     setEmail(event.target[1].value);
     setText(event.target[2].value);
+
+    alert("Thank you for contacting us. We will get back to you shortly.");
   };
 
   return (
@@ -52,10 +54,10 @@ const ContactForm = () => {
               justifyContent: "end",
             }}
           >
-            <Button text="SUBMIT BUTTON" />
+            <Button type="submit" text="SUBMIT BUTTON" />
           </div>
 
-          <div>{name + " " + email + " " + text}</div>
+          <div>{name + " " + text}</div>
         </form>
       </div>
       <div className={styles.contact_image}>
